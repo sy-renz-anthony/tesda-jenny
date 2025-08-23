@@ -1,0 +1,81 @@
+import Marquee from "react-fast-marquee";
+
+import logo from "./assets/TESDA-emblem-blue.png";
+import contentPic from "./assets/content-pic-1.png";
+import fileAssessmentCostCACW from "./assets/Assessment Cost CACW.pdf";
+import fileAssessmentCost from "./assets/Assessment Cost.pdf";
+import fileTrainingCost from "./assets/Training Cost.pdf";
+import fileEntrepreneurshipCost from "./assets/Entrepreneurship Cost.pdf";
+
+import {AiFillFacebook, AiFillInstagram, AiFillTikTok} from "react-icons/ai";
+
+function App() {
+
+  return (
+    <div className="background relative flex flex-col w-full min-h-screen top-0 left-0">
+      <div className='header fixed top-0 left-0 bg-white shadow relative w-full h-15 top-0 left-0 flex flex-row items-center'>
+        <img src={logo} className="relative h-10 w-auto mx-10"/>
+        <h1 className="text-green-600 text-2xl font-bold">Jenny Tesda Project</h1>
+      </div>
+      <div className="content w-full min-h-screen min-h-100 top-0 left-0 flex flex-grow bg-gray-100">
+        <div className="relative w-full h-auto flex flex-col mx-10 my-5 items-center bg-white shadow rounded-2xl">
+          <div className="relative w-full h-auto px-3 bg-orange-500 sm:px-20 mt-6 mb-3 py-3">
+            <Marquee className="text-white text-lg sm:text-2xl font-bold" gradient={true} gradientWidth={100} gradientColor={[50, 50, 50]} speed={100} pauseOnHover>Welcome to Jenny's TESDA Project</Marquee>
+          </div>
+          
+          <div className="relative top-0 left-0 w-auto h-full flex flex-col sm:flex-row m-10">
+            <div className="w-auto h-full flex justify-center items-center">
+              <img src={contentPic} className="relative w-auto max-h-130"/>
+            </div>
+            <div className="w-full h-auto flex flex-col justify-center items-center">
+              <h1 className="text-gray-800 font-bold text-xl sm:text-3xl mt-5
+              ml-10">List of available Guide documents for Requirements:</h1>
+              <ul className='text-gray-800 font-bold text-lg sm:text-2xl my-5'>
+                <li className="my-15 hover:text-blue-600">- <a
+                  href={fileAssessmentCostCACW}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Assessment Cost CACW</a>
+                </li>
+                <li className="my-15 hover:text-blue-600">- <a
+                  href={fileAssessmentCost}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Assessment Cost</a>
+                </li>
+                <li className="my-15 hover:text-blue-600">- <a
+                  href={fileEntrepreneurshipCost}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Entrepreneurship Cost</a>
+                </li>
+                <li className="my-15 hover:text-blue-600">- <a
+                  href={fileTrainingCost}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Training Cost</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      <div className='footer bg-green-900 relative w-full h-30 bottom-0 left-0 items-center text-white text-xs px-5 py-5 flex flex-col'>
+        <div className="relative top-0 left-0 w-full h-auto flex flex-row justify-center">
+          <AiFillFacebook className="inline-block text-white mx-10" size={35} />
+          <AiFillInstagram className="inline-blox text-white mx-10" size={35} />
+          <AiFillTikTok className="inline-blox text-white mx-10" size={35} />
+        </div>
+        <div className="absolute bottom-0 left-0 w-full h-auto pb-2 flex flex-row">
+          <p className="w-full ml-10">Developed by: Jenny R. Dael &trade;</p>
+          <p className="w-full text-center">OJT from NORSU - Siaton Campus</p>
+          <p className="w-full text-right mr-10">SY: 2025-2026</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default App
