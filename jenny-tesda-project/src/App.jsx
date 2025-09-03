@@ -2,10 +2,11 @@ import Marquee from "react-fast-marquee";
 
 import logo from "./assets/TESDA-emblem-blue.png";
 import contentPic from "./assets/content-pic-1.png";
-import fileAssessmentCostCACW from "./assets/Assessment Cost CACW.pdf";
-import fileAssessmentCost from "./assets/Assessment Cost.pdf";
-import fileTrainingCost from "./assets/Training Cost.pdf";
+import fileAssessmentCostCACW from "./assets/Assessment cost  CACW.pdf";
+import fileAssessmentCost from "./assets/Assessment cost.pdf";
+import fileTrainingCost from "./assets/training SUPPORT FUND.pdf";
 import fileEntrepreneurshipCost from "./assets/Entrepreneurship Cost.pdf";
+import fileDiplomaCost from "./assets/Diploma.pdf";
 
 import {AiFillFacebook, AiFillInstagram, AiFillTikTok} from "react-icons/ai";
 import { GoDotFill } from "react-icons/go";
@@ -55,6 +56,12 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >Training Cost</a>
+                </li>
+                <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
+                  href={fileDiplomaCost}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Diploma</a>
                 </li>
               </ul>
             </div>
