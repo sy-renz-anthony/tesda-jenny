@@ -2,10 +2,10 @@ import Marquee from "react-fast-marquee";
 
 import logo from "./assets/TESDA-emblem-blue.png";
 import contentPic from "./assets/content-pic-1.png";
-import fileAssessmentCostCACW from "./assets/Assessment cost  CACW.pdf";
-import fileAssessmentCost from "./assets/Assessment cost.pdf";
-import fileTrainingCost from "./assets/training SUPPORT FUND.pdf";
-import fileEntrepreneurshipCost from "./assets/Entrepreneurship Cost.pdf";
+import fileAssessmentCostCACW from "./assets/Assessment_cost _CACW.pdf";
+import fileAssessmentCost from "./assets/Assessment_cost.pdf";
+import fileTrainingCost from "./assets/training_SUPPORT_FUND.pdf";
+import fileEntrepreneurshipCost from "./assets/Entrepreneurship_Cost.pdf";
 import fileDiplomaCost from "./assets/Diploma.pdf";
 
 import {AiFillFacebook, AiFillInstagram, AiFillTikTok} from "react-icons/ai";
