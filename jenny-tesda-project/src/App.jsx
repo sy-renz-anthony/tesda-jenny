@@ -1,6 +1,8 @@
 import Marquee from "react-fast-marquee";
 
 import logo from "./assets/TESDA-emblem-blue.png";
+import banner from "./assets/banner.png";
+import icon from "./assets/icon.png";
 import contentPic from "./assets/content-pic-1.png";
 import fileAssessmentCostCACW from "./assets/Assessment_cost _CACW.pdf";
 import fileAssessmentCost from "./assets/Assessment_cost.pdf";
@@ -15,9 +17,14 @@ function App() {
 
   return (
     <div className="background relative flex flex-col w-full min-h-screen top-0 left-0">
-      <div className='header fixed top-0 left-0 bg-white shadow relative w-full h-15 top-0 left-0 flex flex-row items-center'>
-        <img src={logo} className="relative h-10 w-auto mx-10"/>
-        <h1 className="text-green-600 text-2xl font-bold">TESDA Scholarships Document</h1>
+      <div className='header fixed top-0 left-0 bg-white shadow relative w-full h-20 top-0 left-0 flex flex-row items-center'>
+        <div className="flex flex-row w-full">
+          <img src={logo} className="relative h-15 sm:h-10 w-auto mx-10 my-auto"/>
+          <h1 className="text-green-600 text-lg sm:text-2xl font-bold py-auto">TESDA Scholarships Document</h1>
+        </div>
+        <div className="flex w-fit sm:w-full justify-end">
+          <img src={banner} className="relative h-5 sm:h-10 w-auto mx-2 sm:mx-10"/>
+        </div>
       </div>
       <div className="content w-full min-h-screen min-h-100 top-0 left-0 flex flex-grow bg-gray-100">
         <div className="relative w-full h-auto flex flex-col mx-10 my-5 items-center bg-white shadow rounded-2xl">
@@ -26,7 +33,8 @@ function App() {
           </div>
           
           <div className="relative top-0 left-0 w-auto h-full flex flex-col sm:flex-row m-10">
-            <div className="w-auto h-full flex justify-center items-center">
+            <div className="w-auto h-full flex flex-col justify-center items-center gap-5">
+              <img src={icon} className="relative w-auto max-h-100"/>
               <img src={contentPic} className="relative w-auto max-h-130"/>
             </div>
             <div className="w-full h-auto flex flex-col justify-center items-center">
