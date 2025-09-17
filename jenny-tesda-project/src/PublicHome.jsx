@@ -29,7 +29,7 @@ function PublicHome() {
           <h1 className="text-green-600 text-xs sm:text-xl xl:text-2xl font-bold py-auto">Technical Education and Skills Development Authority</h1>
         </div>
         <div className="flex w-fit lg:w-full justify-end">
-          <img src={banner} className="relative hidden sm:block h-5 sm:h-10 w-auto mx-2 sm:mx-10"/>
+          <img src={banner} className="relative hidden lg:block h-5 sm:h-10 w-auto mx-2 sm:mx-10"/>
         </div>
         <div className="w-full flex flex-col items-end justify-end text-end text-sm text-orange-600 text-xs">
           <a href="tel:+639179106440" className="flex flex-row hover:text-green-600"><MdCall className="w-5 h-5 mr-2" /><p className="mr-7">09179106440</p></a>
