@@ -44,14 +44,12 @@ function Diploma() {
           <div className="relative w-full h-auto px-3 bg-orange-500 sm:px-20 mt-6 mb-3 py-3">
             <Marquee className="text-white text-lg sm:text-2xl font-bold" gradient={true} gradientWidth={100} gradientColor={[50, 50, 50]} speed={100} pauseOnHover>Welcome to TESDA Scholarships Document</Marquee>
           </div>
-          
+          <h1 className="text-gray-800 text-center font-bold text-xl sm:text-3xl mt-5 ml-10">TESDA Scholarships Billing Documents:</h1>
           <div className="relative top-0 left-0 w-auto h-full flex flex-col sm:flex-row m-10 gap-10">
             <div className="w-full h-full flex flex-col justify-center items-center gap-5">
               <img src={icon} className="relative w-full max-h-300 rounded-2xl"/>
             </div>
             <div className="w-full h-auto flex flex-col justify-center items-center">
-              <h1 className="text-gray-800 font-bold text-xl sm:text-3xl mt-5
-              ml-10">TESDA Scholarships Billing Documents:</h1>
               <ul className='text-gray-800 font-bold text-lg sm:text-2xl my-5'>
                 <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
                   href={file50}
