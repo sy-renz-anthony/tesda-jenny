@@ -33,7 +33,7 @@ function Diploma() {
         <div className="w-full flex flex-col items-end justify-end text-end text-sm text-orange-600 text-xs">
           <a href="tel:+630354229481" className="flex flex-row hover:text-green-600"><MdCall className="w-5 h-5 mr-2" /><p className="mr-7">09179106440</p></a>
           <a href="tel:+630354229481" className="flex flex-row hover:text-green-600"><MdCall className="w-5 h-5 mr-2" /><p className="mr-7">09560063870</p></a>
-          <a href="mailto:region7.negrosoriental@tesda.gov.ph" className="flex flex-row hover:text-green-600"><MdEmail className="w-5 h-5 mr-2" /><p className="mr-5">region7.negrosoriental@tesda.gov.ph</p></a>
+          <a href="mailto:region7.negrosoriental@tesda.gov.ph" className="flex flex-row hover:text-green-600"><MdEmail className="w-5 h-5 mr-2" /><p className="mr-5 hidden sm:block">region7.negrosoriental@tesda.gov.ph</p><p className="mr-5 block sm:hidden">region7.negrosoriental...</p></a>
         </div>
       </div>
       <div className="content w-full min-h-screen min-h-100 top-0 left-0 flex flex-grow bg-cover bg-center"  style={{ backgroundImage: `url(${contentPic})` }} >
@@ -42,14 +42,15 @@ function Diploma() {
               <img src={headerPic} className="relative w-full max-h-60"/>
           </div>
           <div className="relative w-full h-auto px-3 bg-orange-500 sm:px-20 mt-6 mb-3 py-3">
-            <Marquee className="text-white text-lg sm:text-2xl font-bold" gradient={true} gradientWidth={100} gradientColor={[50, 50, 50]} speed={100} pauseOnHover>Welcome to TESDA Scholarships Document</Marquee>
+            <Marquee className="text-white text-lg sm:text-2xl font-bold" gradient={true} gradientWidth={100} gradientColor={[50, 50, 50]} speed={100} pauseOnHover>Welcome to TESDA Scholarships Document&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
           </div>
-          <h1 className="text-gray-800 text-center font-bold text-xl sm:text-3xl mt-5 ml-10">TESDA Scholarships Billing Documents:</h1>
+          <h1 className="text-gray-800 text-center font-bold text-xl sm:text-3xl mt-5 mx-auto hidden sm:block">TESDA Scholarships Billing Documents:</h1>
           <div className="relative top-0 left-0 w-auto h-full flex flex-col sm:flex-row m-10 gap-10">
             <div className="w-full h-full flex flex-col justify-center items-center gap-5">
               <img src={icon} className="relative w-full max-h-300 rounded-2xl"/>
             </div>
             <div className="w-full h-auto flex flex-col justify-center items-center">
+              <h1 className="text-gray-800 text-center font-bold text-xl sm:text-3xl mt-5 mx-auto block sm:hidden">TESDA Scholarships Billing Documents:</h1>
               <ul className='text-gray-800 font-bold text-lg sm:text-2xl my-5'>
                 <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
                   href={file50}
