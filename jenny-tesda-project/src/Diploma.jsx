@@ -25,7 +25,7 @@ function Diploma() {
       <div className='header fixed top-0 left-0 bg-white shadow relative w-full h-20 top-0 left-0 flex flex-row items-center'>
         <div className="flex flex-row w-full">
           <img src={logo} className="relative h-10 w-auto mx-5 my-auto"/>
-          <h1 className="text-green-600 text-sm sm:text-xl xl:text-2xl font-bold py-auto">Technical Education and Skills Development Authority</h1>
+          <h1 className="text-green-600 text-xs sm:text-xl xl:text-2xl font-bold py-auto">Technical Education and Skills Development Authority</h1>
         </div>
         <div className="flex w-fit lg:w-full justify-end">
           <img src={banner} className="relative hidden sm:block h-5 sm:h-10 w-auto mx-2 sm:mx-10"/>
@@ -33,7 +33,7 @@ function Diploma() {
         <div className="w-full flex flex-col items-end justify-end text-end text-sm text-orange-600 text-xs">
           <a href="tel:+630354229481" className="flex flex-row hover:text-green-600"><MdCall className="w-5 h-5 mr-2" /><p className="mr-7">09179106440</p></a>
           <a href="tel:+630354229481" className="flex flex-row hover:text-green-600"><MdCall className="w-5 h-5 mr-2" /><p className="mr-7">09560063870</p></a>
-          <a href="mailto:region7.negrosoriental@tesda.gov.ph" className="flex flex-row hover:text-green-600"><MdEmail className="w-5 h-5 mr-2" /><p className="mr-5 hidden sm:block">region7.negrosoriental@tesda.gov.ph</p><p className="mr-5 block sm:hidden">region7.negrosoriental...</p></a>
+          <a href="mailto:region7.negrosoriental@tesda.gov.ph" className="flex flex-row hover:text-green-600"><MdEmail className="w-5 h-5 mr-2" /><p className="mr-5 hidden sm:block">region7.negrosoriental@tesda.gov.ph</p><p className="mr-5 block sm:hidden">region7.negor...</p></a>
         </div>
       </div>
       <div className="content w-full min-h-screen min-h-100 top-0 left-0 flex flex-grow bg-cover bg-center"  style={{ backgroundImage: `url(${contentPic})` }} >
