@@ -2,6 +2,7 @@ import { Router, Routes, Route} from 'react-router-dom';
 
 import PublicHome from './PublicHome';
 import Diploma from './Diploma';
+import NewNormal from './NewNormal';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<PublicHome />} />
         <Route path='/diploma' element={<Diploma />} />
+        <Route path='/new-normal' element={<NewNormal />} />
       </Routes>
     </div>
   );

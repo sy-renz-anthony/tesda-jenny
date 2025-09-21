@@ -7,7 +7,7 @@ import banner from "./assets/banner.png";
 import headerPic from "./assets/heading_pic.png"
 import icon from "./assets/icon.png";
 import contentPic from "./assets/content-pic-1.png";
-import file50 from "./assets/diploma/50_SUPPORT_FOUND.pdf";
+import visionMission from "./assets/mission-vision.png";
 import file70 from "./assets/diploma/70_SUPPORT_FOUND.pdf";
 import fileInstructionalMaterials from "./assets/diploma/INSTRUCTIONAL_MATERIALS.pdf";
 import fileRemaining from "./assets/diploma/REMAINING.pdf";
@@ -47,22 +47,20 @@ function Diploma() {
           <h1 className="text-gray-800 text-center font-bold text-xl sm:text-3xl mt-5 mx-auto hidden sm:block">TESDA Scholarships Billing Documents:</h1>
           <div className="relative top-0 left-0 w-auto h-full flex flex-col sm:flex-row m-10 gap-10">
             <div className="w-full h-full flex flex-col justify-center items-center gap-5">
-              <img src={icon} className="relative w-full max-h-300 rounded-2xl"/>
+              <div className="flex flex-col w-full h-auto items-center">
+                <img src={icon} className="w-auto h-fit"/>
+              </div>
+              <img src={visionMission} className="relative w-full h-auto px-2 py-2"/>
             </div>
             <div className="w-full h-auto flex flex-col justify-center items-center">
               <h1 className="text-gray-800 text-center font-bold text-xl sm:text-3xl mt-5 mx-auto block sm:hidden">TESDA Scholarships Billing Documents:</h1>
               <ul className='text-gray-800 font-bold text-lg sm:text-2xl my-5'>
-                <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
-                  href={file50}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >50% Training Support Fund</a>
-                </li>
+                
                 <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
                   href={file70}
                   target="_blank"
                   rel="noopener noreferrer"
-                >70% Training Support Fund</a>
+                >50% Training Cost & 70% Training Support Fund</a>
                 </li>
                 <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
                   href={fileInstructionalMaterials}
@@ -74,7 +72,7 @@ function Diploma() {
                   href={fileRemaining}
                   target="_blank"
                   rel="noopener noreferrer"
-                >Remaining Cost</a>
+                >Remaining 50% Training Cost & 30% Training Support Fund</a>
                 </li>
               </ul>
             </div>

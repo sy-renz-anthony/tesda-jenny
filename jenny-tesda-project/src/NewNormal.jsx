@@ -8,11 +8,8 @@ import headerPic from "./assets/heading_pic.png"
 import icon from "./assets/icon.png";
 import contentPic from "./assets/content-pic-1.png";
 import visionMission from "./assets/mission-vision.png";
-import fileAssessmentCostCACW from "./assets/Assessment_cost _CACW.pdf";
-import fileAssessmentCost from "./assets/Assessment_cost.pdf";
-import fileTrainingCost from "./assets/training_SUPPORT_FUND.pdf";
-import fileEntrepreneurshipCost from "./assets/Entrepreneurship_Cost.pdf";
-
+import file50 from "./assets/diploma/50_SUPPORT_FOUND.pdf";
+import fileNewNormal from "./assets/NEW NORMAL ASSISTANCE FORM.pdf";
 
 import {AiFillFacebook, AiFillInstagram, AiFillTikTok} from "react-icons/ai";
 import  {MdEmail, MdCall} from "react-icons/md";
@@ -20,7 +17,7 @@ import { GoDotFill } from "react-icons/go";
 
 
 
-function PublicHome() {
+function NewNormal() {
 
   return (
     <div className="background relative flex flex-col w-full min-h-screen top-0 left-0 bg-cover bg-center">
@@ -33,8 +30,8 @@ function PublicHome() {
           <img src={banner} className="relative hidden lg:block h-5 sm:h-10 w-auto mx-2 sm:mx-10"/>
         </div>
         <div className="w-full flex flex-col items-end justify-end text-end text-sm text-orange-600 text-xs">
-          <a href="tel:+639179106440" className="flex flex-row hover:text-green-600"><MdCall className="w-5 h-5 mr-2" /><p className="mr-7">09179106440</p></a>
-          <a href="tel:+639560063870" className="flex flex-row hover:text-green-600"><MdCall className="w-5 h-5 mr-2" /><p className="mr-7">09560063870</p></a>
+          <a href="tel:+630354229481" className="flex flex-row hover:text-green-600"><MdCall className="w-5 h-5 mr-2" /><p className="mr-7">09179106440</p></a>
+          <a href="tel:+630354229481" className="flex flex-row hover:text-green-600"><MdCall className="w-5 h-5 mr-2" /><p className="mr-7">09560063870</p></a>
           <a href="mailto:region7.negrosoriental@tesda.gov.ph" className="flex flex-row hover:text-green-600"><MdEmail className="w-5 h-5 mr-2" /><p className="mr-5 hidden sm:block">region7.negrosoriental@tesda.gov.ph</p><p className="mr-5 block sm:hidden">region7.negor...</p></a>
         </div>
       </div>
@@ -49,49 +46,28 @@ function PublicHome() {
           <h1 className="text-gray-800 text-center font-bold text-xl sm:text-3xl mt-5 mx-auto hidden sm:block">TESDA Scholarships Billing Documents:</h1>
           <div className="relative top-0 left-0 w-auto h-full flex flex-col sm:flex-row m-10 gap-10">
             <div className="w-full h-full flex flex-col justify-center items-center gap-5">
-              <div className="flex flex-col w-full h-auto items-center">
-                <img src={icon} className="w-auto h-fit"/>
+                <div className="flex flex-col w-full h-auto items-center">
+                  <img src={icon} className="w-auto h-fit"/>
+                </div>
+                <img src={visionMission} className="relative w-full h-auto px-2 py-2"/>
               </div>
-              <img src={visionMission} className="relative w-full h-auto px-2 py-2"/>
-            </div>
             <div className="w-full h-auto flex flex-col justify-center items-center">
               <h1 className="text-gray-800 text-center font-bold text-xl sm:text-3xl mt-5 mx-auto block sm:hidden">TESDA Scholarships Billing Documents:</h1>
               <ul className='text-gray-800 font-bold text-lg sm:text-2xl my-5'>
+                
                 <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
-                  href={fileAssessmentCostCACW}
+                  href={file50}
                   target="_blank"
                   rel="noopener noreferrer"
-                >Assessment Cost CACW</a>
-                </li>
-                <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
-                  href={fileAssessmentCost}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Assessment Cost</a>
-                </li>
-                <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
-                  href={fileEntrepreneurshipCost}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Entrepreneurship Cost</a>
-                </li>
-                <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
-                  href={fileTrainingCost}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Training Cost</a>
-                </li>
-                <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; 
-                  
-                    <Link to="/diploma">Diploma</Link>
-                  
-                </li>
-                <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; 
-                  
-                    <Link to="/new-normal">New Normal Assist Form (CFSP only)</Link>
-                  
+                >Remaining 50% Training Support Fund </a>
                 </li>
                 
+                <li className="my-15 hover:text-blue-600 flex flex-row items-center"><GoDotFill />&nbsp;&nbsp; <a
+                                  href={fileNewNormal}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >New Normal Assist Form (CFSP only)</a>
+                                </li>
               </ul>
             </div>
           </div>
@@ -115,4 +91,4 @@ function PublicHome() {
   )
 }
 
-export default PublicHome
+export default NewNormal
